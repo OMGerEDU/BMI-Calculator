@@ -1,14 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
-import { LanguageProvider, useLanguage } from './components/LanguageContext';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import AccessibilityPanel from './components/AccessibilityPanel';
-import { AccessibilityProvider } from './components/AccessibilityContext';
-import CookieConsent from './components/CookieConsent';
-import TourProvider from './components/TourProvider';
-import { KeyboardShortcutsProvider } from './components/KeyboardShortcutsContext';
-import KeyboardShortcutsHelp from './components/KeyboardShortcutsHelp';
+import { LanguageProvider, useLanguage } from '../components/LanguageContext';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import AccessibilityPanel from '../components/AccessibilityPanel';
+import { AccessibilityProvider } from '../components/AccessibilityContext';
+import CookieConsent from '../components/CookieConsent';
+import TourProvider from '../components/TourProvider';
+import { KeyboardShortcutsProvider } from '../components/KeyboardShortcutsContext';
+import KeyboardShortcutsHelp from '../components/KeyboardShortcutsHelp';
 
 export default function Layout({ children }) {
   const [showHelp, setShowHelp] = useState(false);
